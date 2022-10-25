@@ -1,13 +1,15 @@
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const alertEl = document.querySelector(".alert");
-const btnEl = document.querySelector(".btn");
+const navListEl = document.querySelector(".nav-list");
+//const btnEl = document.querySelector(".btn");
 
+// hamburgerMenu functionality
 hamburgerMenu.addEventListener("click", () => {
-  alertEl.classList.toggle("show");
+  navListEl.classList.toggle("nav-show");
 });
 
-btnEl.addEventListener("click", () => {
-  if (alertEl.classList.contains("show")) {
-    alertEl.classList.remove("show");
-  }
-});
+// btnEl.addEventListener("click", () => {
+//   if (alertEl.classList.contains("show")) {
+//     alertEl.classList.remove("show");
+//   }
+// });
